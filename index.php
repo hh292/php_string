@@ -7,7 +7,8 @@
   $text_4 = "My UCID is hh292";
   $text_5 = "I'm doing masters in Information Systems.";
   $text_6 = "i love coding";
-  text_7 = "H";
+  $text_7 = "H";
+  text_8 = "The curriculum core focuses on Data mining and analytics.";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
@@ -15,6 +16,7 @@
   $obj->print_5($text_5);
   $obj->print_6($text_6);
   $obj->print_7($text_7);
+  $obj->print_8($text_8);
   class main {
 
     public function __construct() {
@@ -116,6 +118,18 @@
 
     }
     
+    // function 8 : wordwrap ...hh292
+  
+    public function print_8($text_8)
+    {
+    	echo'<hr>';
+        echo'<h2> Function Name : wordwrap </h2></br>'; 
+        echo 'Description: Wraps a string to a given number of characters. Here the wrapping width is <b>10</b> : </br>' ."\r"; 
+        echo 'Input --->'.$text_8."\r";
+    	  $domain = wordwrap($text_8, 10, "<br/>\n");
+   	    echo '</br>Output --->'.$domain."\r";
+
+    }
     
     public function __destruct() {
 
