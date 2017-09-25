@@ -4,9 +4,11 @@
   $text_1 = "hh292@njit.edu";
   $text_2 = "my name is himanshu hunge";
   $text_3 = "I Leave in Harrison";
+  $text_4 = "My UCID is hh292";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
+  $obj->print_4($text_4);
   class main {
 
     public function __construct() {
@@ -57,6 +59,19 @@
      $domain = strrev($text_3);
      echo '</br>Output --->'.$domain."\r";
     }
+    
+   // function 4 : strpbrk ...hh292
+
+    public function print_4($text_4)
+    {
+        echo'<hr>';
+        echo'<h2> Function Name : strpbrk </h2></br>'; 
+        echo 'Description: Search a string for any of a set of characters. Here, In this example the set of character is --->  <b><i> is </i></b> :'."\r";    
+    	echo '</br>Input --->'.$text_4."\r";
+
+    	$domain = strpbrk($text_4,'is');
+    	echo '</br>Output ---> '.$domain."\r";
+    } 
     
     public function __destruct() {
 
