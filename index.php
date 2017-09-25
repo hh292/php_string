@@ -6,13 +6,15 @@
   $text_3 = "I Leave in Harrison";
   $text_4 = "My UCID is hh292";
   $text_5 = "I'm doing masters in Information Systems.";
-  text_6 = "i love coding";
+  $text_6 = "i love coding";
+  text_7 = "H";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
   $obj->print_4($text_4);
   $obj->print_5($text_5);
   $obj->print_6($text_6);
+  $obj->print_7($text_7);
   class main {
 
     public function __construct() {
@@ -98,6 +100,20 @@
         echo '</br>Input --->'.$text_6."\r";
     	$domain = strtoupper($text_6);
     	echo '</br>Output --->'.$domain."\r";
+    }
+    
+    // function 7 : ord ...hh292
+  
+    public function print_7($text_7)
+    {
+
+    	echo'<hr>';
+        echo'<h2> Function Name : ord </h2>'; 
+        echo '</br>Description: Return ASCII value of character. Here in this example we are getting the ASCII vaalue of <b> H </b> ' ."\r"; 
+        echo '</br>Input --->'.$text_7."\r";
+    	$domain = ord($text_7);
+    	echo '</br>Output --->'.$domain."\r";
+
     }
     
     
