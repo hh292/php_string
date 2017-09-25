@@ -16,17 +16,17 @@
    
    // function 1 : strstr  ...hh292
     
-    public function print_1($text_1) {
+      public function print_1($text_1) {
 
-      echo '<h2> Function Name : strstr </h2>'."\r";
-      echo 'Description: Find the first occurrence of a string</br>'."\r";	
-      echo 'Input --->'.$text_1."\r";
+       echo '<h2> Function Name : strstr </h2>'."\r";
+       echo 'Description: Find the first occurrence of a string</br>'."\r";	
+       echo 'Input --->'.$text_1."\r";
       
-      $domain = strstr($text_1, '@');
-      echo '</br> 1) First output (If needle is not true) --->  '.$domain."\r";
+       $domain = strstr($text_1, '@');
+       echo '</br> 1) First output (If needle is not true) --->  '.$domain."\r";
 
-      $domain = strstr($text_1,'@',true);
-      echo '</br> 2) Second output (If needle is true) ---> '.$domain;
+       $domain = strstr($text_1,'@',true);
+       echo '</br> 2) Second output (If needle is true) ---> '.$domain;
 
     }
     // function 2 : ucwords ...hh292
