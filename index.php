@@ -5,12 +5,14 @@
   $text_2 = "my name is himanshu hunge";
   $text_3 = "I Leave in Harrison";
   $text_4 = "My UCID is hh292";
-  text_5 = "I'm doing masters in Information Systems.";
+  $text_5 = "I'm doing masters in Information Systems.";
+  text_6 = "i love coding";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
   $obj->print_4($text_4);
   $obj->print_5($text_5);
+  $obj->print_6($text_6);
   class main {
 
     public function __construct() {
@@ -85,6 +87,19 @@
     	$domain = strpos($text_5,"In");
     	echo '</br>Output --->'.$domain."\r";
     }
+    
+     // function 6 : strtoupper ...hh292
+  
+    public function print_6($text_6)
+    {
+    	echo'<hr>';
+        echo'<h2> Function Name : strtoupper </h2></br>'; 
+        echo 'Description: Make a string uppercase.' ."\r"; 
+        echo '</br>Input --->'.$text_6."\r";
+    	$domain = strtoupper($text_6);
+    	echo '</br>Output --->'.$domain."\r";
+    }
+    
     
     public function __destruct() {
 
