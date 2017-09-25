@@ -3,8 +3,10 @@
   $obj = new main();
   $text_1 = "hh292@njit.edu";
   $text_2 = "my name is himanshu hunge";
+  $text_3 = "I Leave in Harrison";
   $obj->print_1($text_1);
-  //$obj->print_2($text_2);
+  $obj->print_2($text_2);
+  $obj->print_3($text_3);
   class main {
 
     public function __construct() {
@@ -29,9 +31,9 @@
        echo '</br> 2) Second output (If needle is true) ---> '.$domain;
 
     }
-    // function 2 : ucwords ...hh292
+   // function 2 : ucwords ...hh292
    
-    /** public function print_2($text_2)
+     public function print_2($text_2)
     {
       echo'<hr>';	
       echo '<h2> Function Name : ucwords </h2>'."\r";
@@ -41,7 +43,20 @@
       $domain = ucwords($text_2);
       echo '</br>Output --->  '.$domain."\r";
       
-    }**/
+    }
+    
+   // function 3 : strrev  ...hh292
+
+    public function print_3($text_3)
+    {
+     echo'<hr>';
+     echo '<h2> Function Name : strrev </h2>'."\r";
+     echo 'Description: Reverse the string </br>';
+     echo 'Input --->'.$text_3."\r";
+
+     $domain = strrev($text_3);
+     echo '</br>Output --->'.$domain."\r";
+    }
     
     public function __destruct() {
 
