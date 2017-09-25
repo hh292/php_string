@@ -8,7 +8,8 @@
   $text_5 = "I'm doing masters in Information Systems.";
   $text_6 = "i love coding";
   $text_7 = "H";
-  text_8 = "The curriculum core focuses on Data mining and analytics.";
+  $text_8 = "The curriculum core focuses on Data mining and analytics.";
+  text_9 = "I want to become a data scientist";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
@@ -17,6 +18,7 @@
   $obj->print_6($text_6);
   $obj->print_7($text_7);
   $obj->print_8($text_8);
+  $obj->print_9($text_9);
   class main {
 
     public function __construct() {
@@ -130,6 +132,20 @@
    	    echo '</br>Output --->'.$domain."\r";
 
     }
+    
+    // function 9 : str_word_count ...hh292
+  
+    public function print_9($text_9)
+    {
+        echo'<hr>';
+        echo'<h2> Function Name : str_word_count </h2></br>';
+        echo'Description: counts the number of words in a string </br>' ."\r";
+        echo 'Input --->'.$text_9."\r";
+
+        $domain = str_word_count($text_9);
+        echo '</br>Output --->'.$domain."\r";
+
+    } 
     
     public function __destruct() {
 
