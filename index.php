@@ -5,10 +5,12 @@
   $text_2 = "my name is himanshu hunge";
   $text_3 = "I Leave in Harrison";
   $text_4 = "My UCID is hh292";
+  text_5 = "I'm doing masters in Information Systems.";
   $obj->print_1($text_1);
   $obj->print_2($text_2);
   $obj->print_3($text_3);
   $obj->print_4($text_4);
+  $obj->print_5($text_5);
   class main {
 
     public function __construct() {
@@ -64,14 +66,25 @@
 
     public function print_4($text_4)
     {
-        echo'<hr>';
-        echo'<h2> Function Name : strpbrk </h2></br>'; 
-        echo 'Description: Search a string for any of a set of characters. Here, In this example the set of character is --->  <b><i> is </i></b> :'."\r";    
-    	echo '</br>Input --->'.$text_4."\r";
+      echo'<hr>';
+      echo'<h2> Function Name : strpbrk </h2></br>'; 
+      echo 'Description: Search a string for any of a set or club of characters. Here, In this example the set of character is --->  <b><i> is </i></b> :'."\r";        echo '</br>Input --->'.$text_4."\r";
 
     	$domain = strpbrk($text_4,'is');
     	echo '</br>Output ---> '.$domain."\r";
     } 
+    
+    // function 5 : strpos ...hh292
+
+    public function print_5($text_5)
+    {
+    	echo'<hr>';
+      echo'<h2> Function Name : strpos </h2></br>'; 
+      echo 'Description: Find the position of the first occurrence of a substring in a string.Here,In this example the position character set is --->  <b><i>In</i></b>' ."\r"; 
+      echo '</br>Input --->'.$text_5."\r";
+    	$domain = strpos($text_5,"In");
+    	echo '</br>Output --->'.$domain."\r";
+    }
     
     public function __destruct() {
 
